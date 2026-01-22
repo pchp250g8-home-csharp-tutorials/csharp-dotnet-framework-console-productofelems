@@ -13,11 +13,11 @@ namespace ProductOfElems
             Console.Clear();
             Console.WriteLine("Input a count of elements");
             Int32.TryParse(Console.ReadLine(), out var nElems);
-            var iArray = new int[nElems];
+            var iArray = new short[nElems];
             var oRnd = new Random();
             for (int i = 0; i < nElems; i++)
             {
-                var nItem = oRnd.Next(1, 20);
+                var nItem = (short)oRnd.Next(1, 10);
                 iArray[i] = nItem;
             }
             var nProduct = 1;
